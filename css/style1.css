@@ -73,4 +73,22 @@ footer {
     height: 10vh;
 }
 
+.tituloh1 {
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.cuerpoabout {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 1rem;
+    width: 60%;
+}
+
+.imgabout {
+    display: inline-block;
+    font-size: 1rem;
+    width: 40%;
+    text-align: center;
+}
 
