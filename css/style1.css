@@ -26,6 +26,23 @@ header {
     color: #fff;
 }
 
+.copy {
+    text-align: center;
+}
+ .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.redes2 {
+    width: 2em;
+    padding: 0.5em;
+    filter: grayscale(100);
+}
+ 
 
 ul li a {
     color: dimgrey;
