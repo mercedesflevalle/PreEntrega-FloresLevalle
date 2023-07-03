@@ -4,33 +4,32 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     height: 100vh;
 
-}
+} */
 
-header {
+/* header {
     display: flex;
     height: 10vh;
     background-color: black;
 
+} */
+
+footer {
+    height: 5vh;
 }
 
-
+/*index1*/
 
 .logoindex {
-    width: 20%;
-    height: 20%;
-    justify-content: center;
-    align-items: center;
-
+    width: 11%;
 }
-
-.menu {
+/* .menu {
     flex-basis: 100%;
     flex-grow: 1;
     align-items: center;
-}
+} */
 
 .footer {
     padding: 1em;
@@ -69,9 +68,7 @@ main {
     height: 85vh;
 }
 
-footer {
-    height: 5vh;
-}
+/*about us*/
 
 .tituloh1 {
     text-align: center;
