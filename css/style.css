@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 /* body {
     height: 100vh;
 } */
-
+.container-fluid img{
+    width: 200px;
+}
 .fondoPrincipal{
      background-image: url(../assets/images/fondo4.jpg);
      max-width: 100%;
