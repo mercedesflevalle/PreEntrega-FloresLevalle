@@ -1,88 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/contact us.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/style.css">
-    <title>Contacto</title>
+    <title>Mathame</title>
+
 </head>
-<body id="fondocontacto">
+
+<body>
     <header>
-        <div>
-            <nav>
-                <ul>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="./pages/Aboutus.html">About us</a></li>
-                  <li> <a href="./pages/Shows.html">Shows</a></li>
-                  <li>  <a href="./pages/Discography.html">Discography</a></li>
-                  <li> <a href="./pages/contacto.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+
+                <img src="../assets/images/logo.jpg" alt="logo-Imagen" class="logoindex">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/aboutus.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/shows.html">Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/discography.html">Discography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-      <div>
-        <h1 class="tituloh1">Contact</h1>
-        </div>
-    <main id="formulario">
-        <form action="" method="post">
-            
-            <div class="letradistinta">
-                <label for="Name">Full name</label>
-                <input type="name" id="Name" placeholder="Write your full name">
-            </div>
-            
-            <br>
 
-            <div class="letradistinta">
-                <label for="Email" class="letradistinta">Email</label>
-                <input type="email" name="" id="Email" placeholder="Write your email here">
-            </div>
-
-            <br>
-
-            <div>
-                <label for="Phone number">Phone</label>
-                <input type="number" name="" id="Phone number" placeholder="Place your phone number">
-            </div>
-
-            <br>
-
-            <div class="letradistinta">
-                <label for="Tema">Subject</label>
-                <input type="text" name="Tema" id="">
-            </div>
-
-            <br>
-
-            <div class="letradistinta">
-                <label for="Complete">Complete</label>
-                <textarea name="" id="Complete" cols="30" rows="10" placeholder="Write your doubt"></textarea>
-            </div>
-
-            <br>
-
-            <div>
-                <fieldset>
-                    <input id= "Send" type="submit" value="Send">
-                    <input id= "Cancel" type="reset" value="Cancel">
-                </fieldset>
-            </div>
-
+    <main class="bg-image d-flex align-items-center"
+        style="background-image: url(../assets/images/fondocontacto.22.jpg); height: 100vh; background-repeat: no-repeat; background-size: cover;">
         
-        </form>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div>
+                
+                            <div class="card-header  text-white">
+                                <h4 class="mb-0">Nos gustaria conocerte un poco mas</h4>
+                            </div>
+                            <div class="card-body">
+                                <form class="row g-3">
+                                    <div class="col-md-12 form-group">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre"
+                                            placeholder="Ingresa tu nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="napellido">Apellido</label>
+                                        <input type="text" class="form-control" id="nombre"
+                                            placeholder="Ingresa tu apellido">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Ingresa tu correo electrónico">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telefono">Teléfono</label>
+                                        <input type="tel" class="form-control" id="telefono"
+                                            placeholder="Ingresa tu número de teléfono">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputCity" class="form-label">Ciudad</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label for="inputState" class="form-label">Barrio</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Elegir...</option>
+                                            <option value="Almagro">Almagro</option>
+                                            <option value="Belgrano">Belgrano</option>
+                                            <option value="Boedo">Boedo</option>
+                                            <option value="Caballito">Caballito</option>
+                                            <option value="Chacarita">Chacarita</option>
+                                            <option value="Flores">Flores</option>
+                                            <option value="Liniers">Liniers</option>
+                                            <option value="Mataderos">Mataderos</option>
+                                            <option value="Nueva Pompeya">Nueva Pompeya</option>
+                                            <option value="Palermo">Palermo</option>
+                                            <option value="Parque Chacabuco">Parque Chacabuco</option>
+                                            <option value="Parque Patricios">Parque Patricios</option>
+                                            <option value="Villa Lugano">Villa Lugano</option>
+                                            <option value="Villa Soldati">Villa soldati</option>
+                                            <option value="Villa Urquiza">Villa Urquiza</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputZip" class="form-label">Codigo postal</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="genero">Genero: </label>
+                                    </div>
+                                    <div class="form-check form-check-inline col-md-2">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline col-md-2">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Femenino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline col-md-2">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">No especifica</label>
+                                    </div>
+                                    <div class="btn-group col-md-4">
+                                        <button type="reset" class="btn btn-primary ">Borrar</button>
+                                    </div>
+                                    <div class="btn-group col-md-4">
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </div>
+<!--                                  
+                                        <div class=" ">
+                                            <button type="button" class="btn btn-primary btn-lg">Enviar  </button>
+                                        </div>
+                                     
+                                     
+                                        <div class="col-md-6">
+                                            <button type="button" class="btn btn-primary btn-lg">Enviar  </button>
+                                        </div> -->
+                                      
+                                </form>
+                            </div>
+                     
+                    </div>
+                </div>
+            </div>
+        <!-- FIN DE FORMULARIO 1 -->
+
+<!-- 
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="justify-content-center">
+                            <h2>Contact</h2>
+                            <P>For more info about shows and tickets</P>
+                        </div>
+                        <hr>
+                        <div class="mb-3 container-fluid text-center">
+                            <label for="nombre" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Your name">
+                        </div>
+                        <div class="mb-3 container-fluid text-center">
+                            <label for="nombre" class="form-label">Surname</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Your surname">
+                        </div>
+                        <div class="mb-3 container-fluid text-center">
+                            <label for="telefono" class="form-label">Phone number</label>
+                            <input type="number" class="form-control" id="telefono"
+                                placeholder="Enter your phone number">
+                        </div>
+                        <div class="mb-3 container-fluid text-center">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3 container-fluid text-center">
+                            <label for="mensaje" class="form-label">Message</label>
+                            <textarea class="form-control" id="mensaje" rows="4"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn fondoEjemplo mb-3 container">Send</button>
+                        <button type="reset" class="btn btn-secondary mb-3 container">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div> -->
+
     </main>
-    
-    <footer>
-        <div>
-            <ul>
-                <li><a href="https://www.instagram.com/mathame_/" id="otro">Social Network</a></li>
-            </ul>
-            
-        </div>
-            
-        
+    <footer class="footer bg-dark">
+        <span class="text-white">
+            © 2023 MATHAME. All Rights Reserved. Designed by Mercedes Flores Levalle.
+        </span>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
