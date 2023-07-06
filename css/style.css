@@ -27,6 +27,7 @@ footer {
     padding: 0.5em;
     filter: grayscale(100);
 }
+
 /*index1*/
 
 .logoindex {
@@ -61,6 +62,7 @@ footer {
     align-items: center;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .redes2 {
@@ -74,9 +76,6 @@ ul li a {
     color: dimgrey;
 }
 
-main {
-    height: 85vh;
-}
 
 /*about us*/
 
@@ -101,11 +100,45 @@ main {
 
 /* discography */
 
-.row {
+/* .row {
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-.5 * var(--bs-gutter-x));
     margin-left: calc(-.5 * var(--bs-gutter-x));
+} */
+
+.tituloDisco {
+    text-align: center;
 }
 
+/* Photos */
+
+.fondoPhotos {
+    background-image: url(../assets/images/fondoPhotos1.jpg);
+    max-width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-item img { 
+    max-width: 60%;
+    margin: auto; 
+  } 
+  
+  .carousel-inner { 
+      text-align: center; 
+  }
+  .carousel-control-next{
+    width: 44%;
+  } 
+  .carousel-control-prev{
+  width: 44%;
+  }
+
+/* .carousel-item {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+} */
