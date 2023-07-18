@@ -1,0 +1,45 @@
+/*About us*/
+
+body {
+    .fondoAbout {
+        background-image: url('#{$fondoAbout}');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .tituloh1 {
+            text-align: center;
+            color: white;
+            font-family: $tipografiaPaginas;
+        }
+
+        .contenedor {
+            display: inline-grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "parrafo-1 parrafo-1 imagen-1"
+                "imagen-2 parrafo-2 parrafo-2";
+            column-gap: 20px;
+            color: white;
+
+            .area1 {
+                grid-area: parrafo-1;
+                color: rgb(167, 166, 166);
+            }
+
+            .area2 {
+                grid-area: imagen-1;
+            }
+
+            .area3 {
+                grid-area: parrafo-2;
+                color: rgb(167, 166, 166);
+            }
+
+            .area4 {
+                grid-area: imagen-2;
+            }
+        }
+    }
+}

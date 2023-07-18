@@ -1,0 +1,45 @@
+/*Photos*/
+
+main {
+    .tituloPhotos {
+        text-align: center;
+        color: rgb(169, 162, 162);
+    }
+
+    .carousel-item {
+        img {
+            max-width: 60%;
+            margin: auto;
+        }
+    }
+
+    .fondoPrueba1 {
+        @include fondoPrueba (url(../assets/images/fondoPhotos1.jpg), 100%, 100vh, center, cover)
+    }
+
+    .fondoPrueba2 {
+        @include fondoPrueba (url(../assets/images/carousel.6.webp), 100%, 100vh, center, cover)
+    }
+
+    .fondoPrueba3 {
+        @include fondoPrueba (url(../assets/images/carousel.2.jpg), 100%, 100vh, center, cover)
+    }
+
+    .fondoPrueba4 {
+        @include fondoPrueba (url(../assets/images/mathame22.jpg), 100%, 100vh, center, cover)
+    }
+
+    .fondoPrueba5 {
+        @include fondoPrueba (url(../assets/images/mathame.jpg), 100%, 100vh, center, cover)
+    }
+
+    .fondoPrueba6 {
+        @include fondoPrueba (url(../assets/images/carousel.4.jpg), 100%, 100vh, center, cover)
+    }
+    .carousel-control-next {
+        width: 44%;
+    }
+    .carousel-control-prev {
+        width: 44%;
+    }
+}

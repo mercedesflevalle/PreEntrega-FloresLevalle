@@ -1,0 +1,29 @@
+$tipografiaPaginas: 'Bacasime Antique', serif;
+$fondoPagina: "../assets/images/fondo4.jpg";
+$fondoAbout: "../assets/images/fondo66.jpeg";
+$fondoDisco: "../assets/images/fondo.dsco2.jpg";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin redes ($width, $padding, $filter) {
+    width: $width;
+    padding: $padding;
+    filter: $filter;
+}
+
+@mixin fondoPrueba ($url, $max, $height, $position, $size) {
+    background-image: $url;
+    max-width: $max;
+    height: $height;
+    background-position: $position;
+    background-size: $size;
+}
+
+@import "index.scss";
+@import "aboutus.scss";
+@import "discography.scss";
+@import "photos.scss";
+@import "contacto.scss";

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Index*/
+body header nav .container-fluid img {
+  width: 200px; }
+
+body .fondoPrincipal {
+  background-image: url("../assets/images/fondo4.jpg");
+  max-width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+
+footer {
+  display: flex;
+  background-color: #000;
+  justify-content: space-between;
+  align-items: center; }
+  footer .parrafoFooter {
+    font-family: "Bacasime Antique", serif;
+    font-size: 1rem;
+    color: #ffffff; }
+  footer .redes {
+    display: flex; }
+    footer .redes li {
+      list-style-type: none; }
+      footer .redes li a .redes1 {
+        width: 2rem;
+        padding: 0.5rem;
+        filter: grayscale(100); }
+
+/*About us*/
+body .fondoAbout {
+  background-image: url("../assets/images/fondo66.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body .fondoAbout .tituloh1 {
+    text-align: center;
+    color: white;
+    font-family: "Bacasime Antique", serif; }
+  body .fondoAbout .contenedor {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "parrafo-1 parrafo-1 imagen-1" "imagen-2 parrafo-2 parrafo-2";
+    column-gap: 20px;
+    color: white; }
+    body .fondoAbout .contenedor .area1 {
+      grid-area: parrafo-1;
+      color: #a7a6a6; }
+    body .fondoAbout .contenedor .area2 {
+      grid-area: imagen-1; }
+    body .fondoAbout .contenedor .area3 {
+      grid-area: parrafo-2;
+      color: #a7a6a6; }
+    body .fondoAbout .contenedor .area4 {
+      grid-area: imagen-2; }
+
+/*Discography*/
+body .fondoDisco {
+  background-image: url("../assets/images/fondo.dsco2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body .fondoDisco h2 {
+    text-align: center;
+    font-family: "Bacasime Antique", serif; }
+  body .fondoDisco p {
+    text-align: center;
+    font-family: "Bacasime Antique", serif; }
+
+/*Photos*/
+main .tituloPhotos {
+  text-align: center;
+  color: #a9a2a2; }
+
+main .carousel-item img {
+  max-width: 60%;
+  margin: auto; }
+
+main .fondoPrueba1 {
+  background-image: url(../assets/images/fondoPhotos1.jpg);
+  max-width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+
+main .fondoPrueba2 {
+  background-image: url(../assets/images/carousel.6.webp);
+  max-width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+
+main .fondoPrueba3 {
+  background-image: url(../assets/images/carousel.2.jpg);
+  max-width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+
+main .fondoPrueba4 {
+  background-image: url(../assets/images/mathame22.jpg);
+  max-width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+
+main .fondoPrueba5 {
+  background-image: url(../assets/images/mathame.jpg);
+  max-width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+
+main .fondoPrueba6 {
+  background-image: url(../assets/images/carousel.4.jpg);
+  max-width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+
+main .carousel-control-next {
+  width: 44%; }
+
+main .carousel-control-prev {
+  width: 44%; }
+
+/*Contacto*/
+main .container-fluid form .tipografiaContact {
+  font-family: "Bacasime Antique", serif; }
+
+main .container-fluid form .tipografiaContact {
+  font-family: "Bacasime Antique", serif; }
+
+main .container-fluid form .fondoEjemplo {
+  background: #888888;
+  background: radial-gradient(circle, #3a3939 0%, black 87%);
+  color: white; }
+
+.redes3 {
+  width: 2em;
+  padding: 0.5em;
+  filter: grayscale(100); }

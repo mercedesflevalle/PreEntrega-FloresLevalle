@@ -1,0 +1,49 @@
+/*Index*/
+
+body {
+    header {
+        nav {
+            .container-fluid {
+                img {
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .fondoPrincipal {
+        background-image: url('#{$fondoPagina}');
+        max-width: 100%;
+        height: 100vh;
+
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+footer {
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+    align-items: center;
+
+    .parrafoFooter {
+        font-family: $tipografiaPaginas;
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    .redes {
+        display: flex;
+
+        li {
+            list-style-type: none;
+
+            a {
+                .redes1 {
+                    @include redes(2rem, 0.5rem, grayscale(100))
+                }
+            }
+        }
+    }
+}
+
