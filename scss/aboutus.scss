@@ -43,3 +43,46 @@ body {
         }
     }
 }
+
+/*Media queries general*/
+
+@media screen and (max-width: 768px) {
+    body {
+        main {
+            .contenedor {
+                .parrafoAbout {
+                    padding: 2%;
+                    grid-template-columns: 1fr;
+                }
+
+                .imagenAbout {
+                    grid-column: 1;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        main {
+            .contenedor {
+                .parrafoAbout {
+                    grid-template-columns: 1fr;
+                    padding: 1%;
+
+                }
+
+                .imagenAbout {
+                    grid-column: 1;
+                    margin-left:auto;
+                    margin-right: auto;
+                    
+                }
+            }
+        }
+    }
+}

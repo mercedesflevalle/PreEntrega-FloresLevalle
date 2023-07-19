@@ -59,6 +59,26 @@ body .fondoAbout {
     body .fondoAbout .contenedor .area4 {
       grid-area: imagen-2; }
 
+/*Media queries general*/
+@media screen and (max-width: 768px) {
+  body main .contenedor .parrafoAbout {
+    padding: 2%;
+    grid-template-columns: 1fr; }
+  body main .contenedor .imagenAbout {
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; } }
+
+@media screen and (max-width: 480px) {
+  body main .contenedor .parrafoAbout {
+    grid-template-columns: 1fr;
+    padding: 1%; }
+  body main .contenedor .imagenAbout {
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto; } }
+
 /*Discography*/
 body .fondoDisco {
   background-image: url("../assets/images/fondo.dsco2.jpg");
