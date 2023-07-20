@@ -1,29 +1,40 @@
 /*Contacto*/
-main {
-    .container-fluid {
-        form {
-            .tipografiaContact {
-                font-family: $tipografiaPaginas;
-            }
 
-            .tipografiaContact {
-                font-family: $tipografiaPaginas;
-            }
+body {
+    main {
+        .container-fluid {
+            form {
+                .tipografiaContact {
+                    font-family: $tipografiaPaginas;
+                }
 
-            .fondoEjemplo {
-                background: rgb(136, 136, 136);
-                background: radial-gradient(circle, rgb(58, 57, 57) 0%, rgb(0, 0, 0) 87%);
-                color: white;
-            }
+                .tipografiaContact {
+                    font-family: $tipografiaPaginas;
+                }
 
+                button {
+                    &:hover {
+                        color: gray;
+                    }
+                }
+
+                .fondoEjemplo {
+                    background: rgb(136, 136, 136);
+                    background: radial-gradient(circle, rgb(58, 57, 57) 0%, rgb(0, 0, 0) 87%);
+                    color: white;
+                }
+
+            }
         }
     }
-}
+
+    footer {
+        .redes3 {
+            width: 2em;
+            padding: 0.5em;
+            filter: grayscale(100);
+        }
+    }
 
 
-
-.redes3 {
-    width: 2em;
-    padding: 0.5em;
-    filter: grayscale(100);
 }

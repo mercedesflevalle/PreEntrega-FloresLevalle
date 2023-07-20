@@ -1,6 +1,11 @@
 /*About us*/
 
 body {
+    header {
+        .navbar {
+            background-color: black;
+        }
+    }
     .fondoAbout {
         background-image: url('#{$fondoAbout}');
         background-position: center;
@@ -14,33 +19,61 @@ body {
         }
 
         .contenedor {
-            display: inline-grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-template-areas:
-                "parrafo-1 parrafo-1 imagen-1"
-                "imagen-2 parrafo-2 parrafo-2";
-            column-gap: 20px;
+                "parrafo-1  imagen-1"
+                "imagen-2 parrafo-2";
+            column-gap: 15px;
             color: white;
 
             .area1 {
                 grid-area: parrafo-1;
                 color: rgb(167, 166, 166);
+                max-width: 95%;
+
+                p {
+                    padding: 3%;
+                    max-width: 95%;
+                }
             }
 
             .area2 {
                 grid-area: imagen-1;
+                max-width: 100%;
+
+                img {
+                    width: 70%;
+                    height: auto;
+                }
             }
 
             .area3 {
                 grid-area: parrafo-2;
+                max-width: 95%;
+
+                p {
+                    max-width: 95%;
+                }
+
                 color: rgb(167, 166, 166);
             }
 
             .area4 {
                 grid-area: imagen-2;
+                max-width: 100%;
+
+                img {
+                    padding: 3%;
+                    width: 70%;
+                    height: auto;
+                }
             }
         }
+    }
+    footer {
+        background-color: black;
     }
 }
 
@@ -50,17 +83,14 @@ body {
     body {
         main {
             .contenedor {
-                .parrafoAbout {
-                    padding: 2%;
-                    grid-template-columns: 1fr;
-                }
+                display: grid;
+                grid-template-columns: (2, 1fr);
+                grid-template-rows: (1, 1fr);
+                grid-template-areas:
+                    "parrafo-1 imagen-1"
+                    "imagen-2 parrafo-2";
+                column-gap: 10px;
 
-                .imagenAbout {
-                    grid-column: 1;
-                    margin-left: auto;
-                    margin-right: auto;
-                    padding: 0;
-                }
             }
         }
     }
@@ -68,20 +98,42 @@ body {
 
 @media screen and (max-width: 480px) {
     body {
+        .fondoAbout {
+            max-width: auto;
+        }
+
         main {
             .contenedor {
-                .parrafoAbout {
-                    grid-template-columns: 1fr;
-                    padding: 1%;
+                display: block;
+                grid-template-columns: 1fr;
+                grid-template-rows: (4, 1fr);
+                grid-template-areas:
+                    "imagen-1"
+                    "parrafo-1"
+                    "imagen-2"
+                    "parrafo-2";
 
+                .area1 {
+                    grid-area: parrafo-1;
+                    color: rgb(167, 166, 166);
+                    max-width: 470%;
+
+                    p {
+                        padding: 3%;
+                        max-width: 470px;
+                    }
                 }
 
-                .imagenAbout {
-                    grid-column: 1;
-                    margin-left:auto;
-                    margin-right: auto;
-                    
+                .area2 {
+                    grid-area: imagen;
+                    max-width: 470px;
+
+                    img {
+                        max-width: 470px;
+                        height: auto;
+                    }
                 }
+
             }
         }
     }

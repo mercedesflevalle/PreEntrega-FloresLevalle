@@ -2,14 +2,32 @@
 
 body {
     header {
-        nav {
+        .navbar {
+            background-color: #000;
+
             .container-fluid {
                 img {
                     width: 200px;
                 }
+
+                ul {
+                    li {
+                        a {
+                            color: white;
+
+                            &:active {
+                                color: rgb(30, 224, 78);
+                            }
+                            &:hover {
+                                color: gray;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
+
     .fondoPrincipal {
         background-image: url('#{$fondoPagina}');
         max-width: 100%;
@@ -18,32 +36,32 @@ body {
         background-position: center;
         background-size: cover;
     }
-}
 
-footer {
-    display: flex;
-    background-color: #000;
-    justify-content: space-between;
-    align-items: center;
 
-    .parrafoFooter {
-        font-family: $tipografiaPaginas;
-        font-size: 1rem;
-        color: #ffffff;
-    }
-
-    .redes {
+    footer {
         display: flex;
+        background-color: #000;
+        justify-content: space-between;
+        align-items: center;
 
-        li {
-            list-style-type: none;
+        .parrafoFooter {
+            font-family: $tipografiaPaginas;
+            font-size: 1rem;
+            color: #ffffff;
+        }
 
-            a {
-                .redes1 {
-                    @include redes(2rem, 0.5rem, grayscale(100))
+        .redes {
+            display: flex;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    .redes1 {
+                        @include redes(2rem, 0.5rem, grayscale(100))
+                    }
                 }
             }
         }
     }
 }
-
