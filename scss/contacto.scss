@@ -6,10 +6,7 @@ body {
             form {
                 .tipografiaContact {
                     font-family: $tipografiaPaginas;
-                }
 
-                .tipografiaContact {
-                    font-family: $tipografiaPaginas;
                 }
 
                 button {
@@ -30,11 +27,12 @@ body {
 
     footer {
         .redes3 {
-            width: 2em;
-            padding: 0.5em;
+            width: 2rem;
+            padding: 0.5rem;
             filter: grayscale(100);
         }
     }
 
 
 }
+

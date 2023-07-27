@@ -7,18 +7,19 @@ body {
         }
     }
     main {
-        .tituloPhotos {
+        .carousel-inner{
+            .tituloPhotos {
             text-align: center;
             color: rgb(169, 162, 162);
-        }
-
-        .carousel-item {
-            img {
-                max-width: 60%;
-                margin: auto;
+            }
+            .carousel-item {
+                padding-top: 4%;
+                img {
+                    max-width: 60%;
+                    margin: auto;
+                }
             }
         }
-
         .fondoPrueba1 {
             @include fondoPrueba (url(../assets/images/fondoPhotos1.jpg), 100%, 100vh, center, cover)
         }
@@ -55,3 +56,23 @@ body {
         background-color: black;
     }
 }
+
+/*Media queries*/
+
+    // @media screen and (max-width: 992px) {
+    //     body {
+    //         main {
+    //             .carousel-item {
+    //                 img {
+    //                     width: 80%;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    @media screen and (max-width: 768px) {
+
+    }
+    @media screen and (max-width: 480px) {
+
+    }

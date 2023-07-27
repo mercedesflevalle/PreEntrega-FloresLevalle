@@ -6,11 +6,9 @@ body {
             background-color: black;
         }
     }
+    
     .fondoAbout {
-        background-image: url('#{$fondoAbout}');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: rgb(46, 46, 46);
 
         .tituloh1 {
             text-align: center;
@@ -20,77 +18,68 @@ body {
 
         .contenedor {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-areas:
-                "parrafo-1  imagen-1"
-                "imagen-2 parrafo-2";
-            column-gap: 15px;
+            column-gap: 5px;
             color: white;
 
-            .area1 {
-                grid-area: parrafo-1;
-                color: rgb(167, 166, 166);
-                max-width: 95%;
-
-                p {
-                    padding: 3%;
-                    max-width: 95%;
-                }
-            }
-
-            .area2 {
-                grid-area: imagen-1;
-                max-width: 100%;
+            .grid1 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                align-items: center;
 
                 img {
-                    width: 70%;
+                    display:flex;
+                    width: 82%;
                     height: auto;
                 }
-            }
 
-            .area3 {
-                grid-area: parrafo-2;
-                max-width: 95%;
+                .flex {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
 
-                p {
-                    max-width: 95%;
-                }
-
-                color: rgb(167, 166, 166);
-            }
-
-            .area4 {
-                grid-area: imagen-2;
-                max-width: 100%;
-
-                img {
-                    padding: 3%;
-                    width: 70%;
-                    height: auto;
+                    p {
+                        font-family: $tipografiaAboutus;
+                        align-items: center;
+                        text-align: center;
+                        padding: 3%;
+                        max-width: 95%;
+                    }
                 }
             }
         }
     }
+
     footer {
         background-color: black;
     }
 }
 
-/*Media queries general*/
+/*Media queries*/
 
 @media screen and (max-width: 768px) {
     body {
-        main {
+        .fondoAbout {
             .contenedor {
-                display: grid;
-                grid-template-columns: (2, 1fr);
-                grid-template-rows: (1, 1fr);
-                grid-template-areas:
-                    "parrafo-1 imagen-1"
-                    "imagen-2 parrafo-2";
-                column-gap: 10px;
+                column-gap: 3px;
 
+                .grid1 {
+                    grid-template-columns: 1fr;
+
+                    .img {
+                        width: 82%;
+                        height: auto;
+                    }
+
+                    .flex {
+                        flex-direction: column;
+
+                        p {
+                            padding: 3%;
+                            max-width: 95%;
+                        }
+                    }
+                }
             }
         }
     }
