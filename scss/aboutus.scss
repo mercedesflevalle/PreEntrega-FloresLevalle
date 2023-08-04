@@ -57,11 +57,18 @@ body {
 
 /*Media queries*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px){
     body {
         .fondoAbout {
             .contenedor {
                 column-gap: 3px;
+                grid-template-columns: 1fr;
+                grid-template-rows: (4, 1fr);
+                grid-template-areas:
+                    "imagen-1"
+                    "parrafo-1"
+                    "imagen-2"
+                    "parrafo-2";
 
                 .grid1 {
                     grid-template-columns: 1fr;

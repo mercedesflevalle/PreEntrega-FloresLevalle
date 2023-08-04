@@ -27,9 +27,7 @@ body {
 
     footer {
         .redes3 {
-            width: 2rem;
-            padding: 0.5rem;
-            filter: grayscale(100);
+            @include redes (2rem, 0.5rem, grayscale(100))
         }
     }
 
