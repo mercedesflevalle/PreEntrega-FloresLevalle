@@ -92,7 +92,10 @@ body footer {
 /*Media queries*/
 @media screen and (max-width: 768px) {
   body .fondoAbout .contenedor {
-    column-gap: 3px; }
+    column-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4, 1fr;
+    grid-template-areas: "imagen-1" "parrafo-1" "imagen-2" "parrafo-2"; }
     body .fondoAbout .contenedor .grid1 {
       grid-template-columns: 1fr; }
       body .fondoAbout .contenedor .grid1 .img {
@@ -141,21 +144,6 @@ body .fondoDisco {
     font-family: "Bacasime Antique", serif;
     color: white; }
 
-/*Media queries*/
-@media screen and (max-width: 768px) {
-  body .fondoDisco .container-fluid .row .col-lg-4 {
-    margin-left: 15%; } }
-
-@media screen and (max-width: 480px) {
-  body .fondoDisco {
-    max-width: 480px; }
-    body .fondoDisco .container-fluid .row .col-lg-4 {
-      margin-left: 15%; } }
-
-@media screen and (max-width: 992px) {
-  body .fondoDisco .container-fluid .row .col-lg-4 {
-    margin-left: 15%; } }
-
 /*Photos*/
 body header .navbar {
   background-color: black; }
@@ -170,42 +158,42 @@ body main .carousel-inner .carousel-item {
     max-width: 60%;
     margin: auto; }
 
-body main .fondoPrueba1 {
+body main .carousel-inner .fondoPrueba1 {
   background-image: url(../assets/images/fondoPhotos1.jpg);
   max-width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover; }
 
-body main .fondoPrueba2 {
+body main .carousel-inner .fondoPrueba2 {
   background-image: url(../assets/images/carousel.6.webp);
   max-width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover; }
 
-body main .fondoPrueba3 {
+body main .carousel-inner .fondoPrueba3 {
   background-image: url(../assets/images/carousel.2.jpg);
   max-width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover; }
 
-body main .fondoPrueba4 {
+body main .carousel-inner .fondoPrueba4 {
   background-image: url(../assets/images/mathame22.jpg);
   max-width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover; }
 
-body main .fondoPrueba5 {
+body main .carousel-inner .fondoPrueba5 {
   background-image: url(../assets/images/mathame.jpg);
   max-width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover; }
 
-body main .fondoPrueba6 {
+body main .carousel-inner .fondoPrueba6 {
   background-image: url(../assets/images/carousel.4.jpg);
   max-width: 100%;
   height: 100vh;
@@ -222,6 +210,20 @@ body footer {
   background-color: black; }
 
 /*Media queries*/
+@media screen and (max-width: 768px) {
+  body main .carousel-inner .carousel-item img {
+    padding-top: 17%; } }
+
+@media screen and (max-width: 480px) {
+  body main .carousel-inner .carousel-item img {
+    padding-top: 27%; }
+  body main .carousel-inner .carousel-control-next {
+    width: 44%;
+    padding-bottom: 34%; }
+  body main .carousel-inner .carousel-control-prev {
+    width: 44%;
+    padding-bottom: 34%; } }
+
 /*Contacto*/
 body main .container-fluid form .tipografiaContact {
   font-family: "Bacasime Antique", serif; }
